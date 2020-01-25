@@ -1,0 +1,496 @@
+.header{
+    float: top;
+    height: 80px;
+    width : 100%  ;
+    background-color: black;
+}
+.logo
+{
+    float: left ;
+    padding-top:5px; 
+    padding-left: 10px;
+}
+
+.nom
+{
+    float: left;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+.cont
+{
+    float: right ;
+    padding-top:10px; 
+    padding-left: 10px;
+   top: 5px;
+    
+}
+.btn
+{
+    border: 1.6px solid white ;
+    background: none ;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat" ;
+    cursor: pointer;
+    margin: 10px;
+    transition: color 0.8s linear ;
+    position: relative;
+    overflow: hidden ;
+    color: white;
+    
+}
+.btn:hover
+
+{
+  background-color: white ;
+  color: black ;
+  box-shadow: 0 0 5px white ,
+              0 0 25px white ,
+              0 0 50px white ,
+              0 0 200px white ;
+}
+.btn::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.8s ;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+    
+}
+.btn:hover::before
+{
+     transform: scaleY(1); 
+}
+
+
+
+.bottom
+{
+    float: bottom;
+     height: 600px;
+    width : 100%;
+}
+slider{
+    height: 100%;
+    width : 100%;
+    overflow: hidden;
+    position: absolute;
+    display: block ;
+    margin-top: 15px;
+   
+}
+slider > * {
+    height: 100% ;
+    width : 100%  ;
+    overflow: hidden;
+    position: absolute;
+    display: block ;
+    animation: slide 26s infinite;
+}
+
+
+
+slide:nth-child(1)
+{  
+
+    height: 80%;
+    animation-delay: 23s;
+    float: left;  
+    background-image: url("pub4.jpg");
+    background-size: cover; 
+    background-position: center;
+   
+}
+slide:nth-child(2)
+{  
+    height: 80%;
+   
+    
+    float: left;  
+    animation-delay: 17s;
+    background-image: url("pub2.jpg");
+    background-size: cover; 
+    background-position: center;
+   
+}
+slide:nth-child(3)
+{  
+    height: 80%;
+     animation-delay: 11s;
+    float: left;  
+     background-image: url("pub3.png");
+    background-size: cover; 
+    background-position: center;
+}
+slide:nth-child(4)
+{ 
+  
+    animation-delay: 5s;
+   height: 80%;
+    float: left;  
+     background-image: url("pub1.jpg");
+    background-size: cover; 
+    background-position: center;
+   
+}
+@keyframes slide{
+    0%{
+      left:100% ; width :100%;
+    }
+    5%{
+        left:0% ; 
+    }
+    25%{
+       left:0% ;
+    }
+    30%{
+        left:-100% ; width :100%;
+    }
+    30.001%{
+        left:100% ; width :0%;
+    }
+   
+    100%{left:0% ; width :0%;}
+    
+}
+.bt{
+   
+   width: 90px;
+}
+
+h1
+{
+  text-align:start;
+}
+h1 span
+{
+     position: relative;
+     display: inline-block;
+     display: inline-block;
+     font-family: "montserrat" ;
+     color:white;
+     font-size: 23px;
+     animation: bounce 1s infinite alternate;
+     text-shadow:0 1px 0 #ccc,
+                0 2px 0 #ccc,
+                0 3px 0 #ccc,
+                0 4px 0 #ccc, 
+                0 5px 0 #ccc, 
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent, 
+                0 10px 10px rgba(0,0,0,0,4)
+              ;
+   
+        
+} 
+h1 span:nth-child(2){animation-delay: 1s; }
+h1 span:nth-child(3){animation-delay: 2s; }
+h1 span:nth-child(4){animation-delay: 3s; }
+h1 span:nth-child(5){animation-delay: 4s; }
+h1 span:nth-child(6){animation-delay: 5s; }
+h1 span:nth-child(7){animation-delay: 6s; }
+h1 span:nth-child(8){animation-delay: 7s; }
+h1 span:nth-child(9){animation-delay: 8s; }
+
+@keyframes bounce
+{
+    100%{
+        top:-20px;
+        text-shadow:0 1px 0 #ccc,
+                0 2px 0 #ccc,
+                0 3px 0 #ccc,
+                0 4px 0 #ccc, 
+                0 5px 0 #ccc, 
+                0 6px 0 #ccc,
+                0 7px 0 #ccc,
+                0 8px 0 #ccc,
+                0 9px 0 #ccc, 
+                0 50px 25px rgba(0,0,0,0,2)
+              ;
+   
+        
+    }
+}
+.c1{
+    color :tomato;
+}
+.c2{
+    color :white;
+}
+.c3{
+    color :aqua;
+}
+.c4{
+    color :maroon;
+}
+.c5{
+    color :yellow;
+}
+.c6{
+    color :red ;
+}
+.c7{
+    color :royalblue ;
+}
+.c8{
+    color :mediumvioletred ;
+}
+
+.pro
+{
+    
+    float: bottom;
+    width:89%;
+    margin-top: 50px;
+    margin-left: 100px ;
+    
+}
+.produit
+{
+    
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+     border-radius: 20px 20px 20px 20px;
+    margin-top: 20px; 
+    background-color: aliceblue;
+      
+}
+.ima
+{
+      
+      height:230px;
+      width :250px;
+      margin-top: 10px;
+      margin-left: 25px;
+      background-size :cover;
+
+}
+.np
+{
+    width: 300px;
+    height: 48px;
+    text-align: center;
+    font-family: serif;
+    font-size: 20px;
+
+}
+.prix
+{
+    color: red;
+    margin-top: 15px;
+}
+.l
+{
+    float: left;
+    height: 600px;
+    width: 100%;
+}
+.login
+{
+    width: 500px;
+    height: 500px;
+    margin-top: 150px;
+    float: left;
+    margin-left:200px;
+    
+}
+.user
+{
+    margin-left: 160px;
+    height:180px;
+    width:180px;
+}
+
+p
+{
+   margin-left: 25px;
+}
+.div1
+{
+    width: 100%;
+    height: 100%;
+   
+          
+}
+
+.div2
+{
+   
+    margin-left: 6%;
+    margin-top: 1%;
+    width: 600px;
+    height: 400px;
+    float: left;
+    background-color: white;
+   
+ 
+}
+.Ajout
+{
+     width: 100%;
+    height: 410px;
+    background-image: url("Ph_Vend.jpg");
+    background-size: cover;
+}
+.div3
+{
+    width: 350px;
+    height:350px;
+    margin-left: 125px;
+    margin-top: 5%;
+    text-align: centre;
+  
+    
+}
+.div3a
+{
+    width: 100%;
+    height:200px;
+    background-color: gainsboro;
+    margin-top: 1%;
+     
+}
+.div3A
+{
+    width: 180px;
+    height:180px;
+    margin-top: 10px;
+    margin-left: 50px;
+    float: left;
+   
+}
+.div3B
+{
+    float: left;
+    font-size: 60px;
+    font-family: cursive;
+    color:black;
+}
+.hhA
+{
+    float: left;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 3%;
+    
+}
+
+
+.photoprofil
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 80% 80% 80% 80% ;
+    
+}
+.nomprenom
+{
+    font-size: 40px;
+    margin-top: 20px;
+    color: black;
+    margin-left: 50px;
+}
+.label
+{
+    font-size: 20px;
+    margin-top: 3.5%;
+}
+.in
+{
+   
+   width: 500px;
+   font-size: 25px;
+   padding-left: 30px;
+   height: 40px;
+   margin-left: 50px;
+  
+}
+.add
+{
+    margin-top: 5%;
+    background:black;
+    border: 1.6px solid black ;
+    width: 500px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.btnajout
+{
+    border: 1.6px solid black ;
+    background: cornflowerblue ;
+    width: 100%;
+    margin-top: 3%;
+    height: 50px;
+    color: black;
+  
+}
+.validate
+{
+    border: 1.6px solid black ;
+    background: cornflowerblue ;
+    width: 600px;
+    margin-top: 2%;
+    height: 50px;
+    margin-left: 400px;
+    color: black;
+}
+#ples
+{
+    text-align: center;
+}
+
+table,tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th{
+    
+}
+
+.pp{
+    text-align: center;
+}
+.p1
+{
+    color: green;
+    font-size: 30px;
+    font-family: cursive;
+    
+    
+}
+.p2{
+    color: black;
+    margin-top: 50px;
+}
+
+.total
+{
+    margin-left:400px;
+    margin-top: 20px;
+    height:70px;
+    text-align: center;
+    border: 2px solid black;
+    width:700px;
+ 
+}
+.total1
+{
+    font-size: 40px;
+    color: red;
+    
+}
